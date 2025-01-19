@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  KidsToDoList
-//
-//  Created by Devis on 19/01/2025.
-//
-
 import SwiftUI
 
 struct ContentView: View {
