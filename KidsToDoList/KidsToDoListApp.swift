@@ -1,11 +1,5 @@
-//
-//  KidsToDoListApp.swift
-//  KidsToDoList
-//
-//  Created by Devis on 19/01/2025.
-//
-
 import SwiftUI
+import SwiftData
 
 @main
 struct KidsToDoListApp: App {
@@ -13,5 +7,6 @@ struct KidsToDoListApp: App {
         WindowGroup {
             ContentView()
         }
+        .modelContainer(for: Task.self)
     }
 }

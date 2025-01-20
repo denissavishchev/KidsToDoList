@@ -12,6 +12,7 @@
 		F2ACF4772D3CE8AB00368E3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2ACF4762D3CE8AB00368E3E /* Assets.xcassets */; };
 		F2ACF47A2D3CE8AB00368E3E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2ACF4792D3CE8AB00368E3E /* Preview Assets.xcassets */; };
 		F2ACF4812D3D77C900368E3E /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2ACF4802D3D77C900368E3E /* Model.swift */; };
+		F2ACF4852D3ED6BA00368E3E /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2ACF4842D3ED6BA00368E3E /* AddTaskView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		F2ACF4762D3CE8AB00368E3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2ACF4792D3CE8AB00368E3E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F2ACF4802D3D77C900368E3E /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		F2ACF4842D3ED6BA00368E3E /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				F2ACF4722D3CE8A700368E3E /* KidsToDoListApp.swift */,
 				F2ACF4742D3CE8A700368E3E /* ContentView.swift */,
+				F2ACF4842D3ED6BA00368E3E /* AddTaskView.swift */,
 				F2ACF4802D3D77C900368E3E /* Model.swift */,
 				F2ACF4762D3CE8AB00368E3E /* Assets.xcassets */,
 				F2ACF4782D3CE8AB00368E3E /* Preview Content */,
@@ -143,6 +146,7 @@
 				F2ACF4812D3D77C900368E3E /* Model.swift in Sources */,
 				F2ACF4752D3CE8A700368E3E /* ContentView.swift in Sources */,
 				F2ACF4732D3CE8A700368E3E /* KidsToDoListApp.swift in Sources */,
+				F2ACF4852D3ED6BA00368E3E /* AddTaskView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

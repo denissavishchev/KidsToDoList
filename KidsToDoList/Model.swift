@@ -11,12 +11,13 @@ class Task {
     var status: Status
     var type: TaskType
 
-    init(name: String,
-         details: String,
-         color: String,
-         deadline: Date,
-         status: Status,
-         type: TaskType) {
+    init(name: String = "",
+         details: String = "",
+         color: String = "",
+         deadline: Date = .now,
+         status: Status = .inProgress,
+         type: TaskType = .hobby
+    ) {
         self.name = name
         self.details = details
         self.color = color
