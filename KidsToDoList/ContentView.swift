@@ -8,30 +8,21 @@ struct ContentView: View {
     @State private var path = [Task]()
     
     var body: some View {
-        NavigationStack(path: $path){
+        NavigationStack(){
+            NavigationLink(destination: AddTaskView()){
+                Text("Add task")
+            }
             List{
                 ForEach(tasks){task in
-                    NavigationLink(value: task){
                         VStack(alignment: .leading){
                             Text(task.name)
                                 .font(.headline)
                             Text(task.deadline.formatted(date: .long, time: .shortened))
                         }
-                    }
                 }
                 .onDelete(perform: deleteTask)
             }
-            .navigationDestination(for: Task.self, destination: AddTaskView.init)
-            .toolbar{
-                Button("+", systemImage: "plus", action: addTask)
-            }
         }
-    }
-    
-    func addTask(){
-        let task = Task()
-        mc.insert(task)
-        path = [task]
     }
     
     func deleteTask(_ indexSet: IndexSet){
