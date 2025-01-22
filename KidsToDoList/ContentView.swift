@@ -12,13 +12,9 @@ struct ContentView: View {
             NavigationLink(destination: AddTaskView()){
                 Text("Add task")
             }
-            List{
+            ScrollView{
                 ForEach(tasks){task in
-                        VStack(alignment: .leading){
-                            Text(task.name)
-                                .font(.headline)
-                            Text(task.deadline.formatted(date: .long, time: .shortened))
-                        }
+                    TaskTile(futureDate: task.deadline)
                 }
                 .onDelete(perform: deleteTask)
             }
