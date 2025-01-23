@@ -3,7 +3,6 @@ import SwiftData
 
 struct ContentView: View {
     
-    @Environment(\.modelContext) var mc
     @Query var tasks: [Task]
     @State private var path = [Task]()
     
@@ -13,21 +12,12 @@ struct ContentView: View {
                 Text("Add task")
             }
             ScrollView{
-                ForEach(tasks){task in
-                    TaskTile(futureDate: task.deadline)
+                ForEach(Array(tasks.enumerated()), id: \.element.id){index, task in
+                    TaskTile(index: index, futureDate: task.deadline, name: task.name, description: task.details)
                 }
-                .onDelete(perform: deleteTask)
             }
         }
     }
-    
-    func deleteTask(_ indexSet: IndexSet){
-        for index in indexSet{
-            let task = tasks[index]
-            mc.delete(task)
-        }
-    }
-    
 }
 
 #Preview {
