@@ -13,7 +13,7 @@ struct ContentView: View {
             }
             ScrollView{
                 ForEach(Array(tasks.enumerated()), id: \.element.id){index, task in
-                    TaskTile(index: index, futureDate: task.deadline, name: task.name, description: task.details)
+                    TaskTile(index: index, futureDate: task.deadline, name: task.name, description: task.details, image: task.image)
                 }
             }
         }

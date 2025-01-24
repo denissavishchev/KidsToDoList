@@ -14,6 +14,7 @@
 		F2ACF4812D3D77C900368E3E /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2ACF4802D3D77C900368E3E /* Model.swift */; };
 		F2ACF4852D3ED6BA00368E3E /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2ACF4842D3ED6BA00368E3E /* AddTaskView.swift */; };
 		F2ACF4872D41711600368E3E /* TaskTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2ACF4862D41711600368E3E /* TaskTile.swift */; };
+		F2BEB77B2D441773007C2BDA /* TypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BEB77A2D441773007C2BDA /* TypeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		F2ACF4802D3D77C900368E3E /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		F2ACF4842D3ED6BA00368E3E /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
 		F2ACF4862D41711600368E3E /* TaskTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTile.swift; sourceTree = "<group>"; };
+		F2BEB77A2D441773007C2BDA /* TypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				F2ACF4842D3ED6BA00368E3E /* AddTaskView.swift */,
 				F2ACF4802D3D77C900368E3E /* Model.swift */,
 				F2ACF4862D41711600368E3E /* TaskTile.swift */,
+				F2BEB77A2D441773007C2BDA /* TypeView.swift */,
 				F2ACF4762D3CE8AB00368E3E /* Assets.xcassets */,
 				F2ACF4782D3CE8AB00368E3E /* Preview Content */,
 			);
@@ -146,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2BEB77B2D441773007C2BDA /* TypeView.swift in Sources */,
 				F2ACF4812D3D77C900368E3E /* Model.swift in Sources */,
 				F2ACF4872D41711600368E3E /* TaskTile.swift in Sources */,
 				F2ACF4752D3CE8A700368E3E /* ContentView.swift in Sources */,

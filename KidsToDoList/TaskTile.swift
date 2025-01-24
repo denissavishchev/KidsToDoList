@@ -15,6 +15,7 @@ struct TaskTile: View {
     var futureDate: Date
     var name: String
     var description: String
+    var image: String
     
     var body: some View {
         VStack{
@@ -71,7 +72,7 @@ struct TaskTile: View {
                         .padding(.bottom, 70)
                 }
                 HStack {
-                    Image("Bike")
+                    Image(image)
                         .resizable()
                         .scaledToFit()
                     .frame(width: 120)
@@ -176,5 +177,5 @@ struct option: View {
 }
 
 #Preview {
-    TaskTile(index: 1, futureDate: Date(), name: "Task number one", description: "As far as possible")
+    TaskTile(index: 1, futureDate: Date(), name: "Task number one", description: "As far as possible", image: "Piano")
 }

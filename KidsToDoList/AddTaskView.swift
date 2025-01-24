@@ -4,8 +4,11 @@ struct AddTaskView: View {
     
     @State private var path = [Task]()
     @Environment(\.modelContext) var mc
-    @State private var task = Task(name: "", details: "", deadline: Date(), type: .school)
+    @State private var task = Task(name: "", details: "", deadline: Date(), image: "")
     @Environment(\.dismiss) var dismiss
+    
+    @State private var selectedImage = "Book"
+    @State private var selectedColor = Color.red
     
     var body: some View {
         VStack{
@@ -15,27 +18,16 @@ struct AddTaskView: View {
             }label: {
                 Text("Add task")
             }
-            Form{
-                TextField("Name", text: $task.name)
-                TextField("Description", text: $task.details, axis: .vertical)
-                DatePicker("Date", selection: $task.deadline)
+            TextField("Name", text: $task.name)
+            TextField("Description", text: $task.details, axis: .vertical)
+            DatePicker("Date", selection: $task.deadline)
                 
-                Section("Task type"){
-                    Picker("Task type", selection: $task.type) {
-                        ForEach(TaskType.allCases, id: \.self) { type in
-                            Text(type.rawValue)
-                                .tag(type)
-                        }
-                    }
-                    .pickerStyle(.segmented)
-                }
-            }
-            .navigationBarTitleDisplayMode(.inline)
+            TypeView(selectedImage: $selectedImage, selectedColor: $selectedColor)
         }
     }
     
     func addTask(){
-        let task = Task(name: task.name, details: task.details, deadline: task.deadline, type: task.type)
+        let task = Task(name: task.name, details: task.details, deadline: task.deadline, image: selectedImage)
         mc.insert(task)
         path = [task]
     }

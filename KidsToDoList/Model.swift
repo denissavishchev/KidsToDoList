@@ -9,21 +9,21 @@ class Task {
     var color: String
     var deadline: Date
     var status: Status
-    var type: TaskType
+    var image: String
 
     init(name: String = "",
          details: String = "",
          color: String = "",
          deadline: Date = .now,
          status: Status = .inProgress,
-         type: TaskType = .hobby
+         image: String = ""
     ) {
         self.name = name
         self.details = details
         self.color = color
         self.deadline = deadline
         self.status = status
-        self.type = type
+        self.image = image
     }
 }
 
@@ -33,9 +33,3 @@ enum Status: String, Codable, CaseIterable {
     case archive = "Archive"
 }
 
-enum TaskType: String, Codable, CaseIterable {
-    case school = "School"
-    case hobby = "Hobby"
-    case family = "Family"
-    case friends = "Friends"
-}
