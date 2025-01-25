@@ -16,6 +16,7 @@ struct TaskTile: View {
     var name: String
     var description: String
     var image: String
+    @State var isDone: Bool = false
     
     var body: some View {
         VStack{
@@ -65,11 +66,9 @@ struct TaskTile: View {
                         .fontDesign(.rounded)
                     }
                     Spacer()
-                    Circle()
-                        .frame(width: 60)
-                        .foregroundColor(.black)
-                        .padding(.trailing, 6)
-                        .padding(.bottom, 70)
+                    StatusSwitch(isDone: $isDone)
+                        .padding(.bottom, 60)
+                        .padding(.trailing, 4)
                 }
                 HStack {
                     Image(image)
