@@ -18,12 +18,13 @@ struct AddTaskView: View {
             }label: {
                 Text("Add task")
             }
-            TextField("Name", text: $task.name)
-            TextField("Description", text: $task.details, axis: .vertical)
+            InfoField(title: "Name", text: $task.name)
+            InfoField(title: "Description", text: $task.details)
             DatePicker("Date", selection: $task.deadline)
                 
             TypeView(selectedImage: $selectedImage, selectedColor: $selectedColor)
         }
+        .padding(.horizontal)
     }
     
     func addTask(){

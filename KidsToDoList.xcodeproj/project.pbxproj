@@ -16,6 +16,7 @@
 		F2ACF4872D41711600368E3E /* TaskTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2ACF4862D41711600368E3E /* TaskTile.swift */; };
 		F2BEB77B2D441773007C2BDA /* TypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BEB77A2D441773007C2BDA /* TypeView.swift */; };
 		F2BEB77D2D45093B007C2BDA /* StatusSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BEB77C2D45093B007C2BDA /* StatusSwitch.swift */; };
+		F2BEB7812D453686007C2BDA /* InfoField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BEB7802D453686007C2BDA /* InfoField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		F2ACF4862D41711600368E3E /* TaskTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTile.swift; sourceTree = "<group>"; };
 		F2BEB77A2D441773007C2BDA /* TypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeView.swift; sourceTree = "<group>"; };
 		F2BEB77C2D45093B007C2BDA /* StatusSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusSwitch.swift; sourceTree = "<group>"; };
+		F2BEB7802D453686007C2BDA /* InfoField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				F2ACF4862D41711600368E3E /* TaskTile.swift */,
 				F2BEB77A2D441773007C2BDA /* TypeView.swift */,
 				F2BEB77C2D45093B007C2BDA /* StatusSwitch.swift */,
+				F2BEB7802D453686007C2BDA /* InfoField.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 			files = (
 				F2BEB77D2D45093B007C2BDA /* StatusSwitch.swift in Sources */,
 				F2BEB77B2D441773007C2BDA /* TypeView.swift in Sources */,
+				F2BEB7812D453686007C2BDA /* InfoField.swift in Sources */,
 				F2ACF4812D3D77C900368E3E /* Model.swift in Sources */,
 				F2ACF4872D41711600368E3E /* TaskTile.swift in Sources */,
 				F2ACF4752D3CE8A700368E3E /* ContentView.swift in Sources */,
